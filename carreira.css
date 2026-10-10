@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #490303;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to right, #490303, #73030D);
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #F2F2F2;
+}
+
+header h4 {
+    color: #F2F2F2;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+nav {
+    background-color: #732F3B;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #b4a8a8;
+}
+
+main {
+    padding: 40px;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.musica {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+    background: #5a0303;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.musica h3 {
+    color: whitesmoke;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.musica p {
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.musica audio {
+    width: 100%;
+}
+
+footer {
+    background-color: #73030D;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h5 {
+    color: whitesmoke;
+}
+
+/* ============================= */
+/* COMPUTADORES */
+/* ============================= */
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+}
+
+
+@media (max-width: 1100px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    header h4 {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 12px;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .musica {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 25px 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    header h4 {
+        font-size: 14px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: flex;
+        justify-content: center;
+        gap:20px;
+        font-size: 11px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .musica {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .musica h3 {
+        font-size: 19px;
+    }
+
+    .musica p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}

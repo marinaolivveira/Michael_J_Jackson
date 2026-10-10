@@ -1,0 +1,256 @@
+/* Shift + Alt + F formata o texto */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #490303;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to right, #490303, #73030D);
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #F2F2F2;
+}
+
+header h4 {
+    color: #F2F2F2;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+nav {
+    background-color: #732F3B;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #b4a8a8;
+}
+
+main {
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.musica {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+    background: #5a0303;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.musica h3 {
+    color: whitesmoke;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.musica p {
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.musica audio {
+    width: 100%;
+}
+
+footer {
+    background-color: #73030D;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h5 {
+    color: whitesmoke;
+}
+
+/* RESPONSIVIDADE - TABLETS */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    header h4 {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 12px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .container {
+        gap: 25px;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .musica {
+        width: 90%;
+    }
+}
+
+/* RESPONSIVIDADE - CELULARES */
+@media (max-width: 480px) {
+    header {
+        padding: 25px 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header h4 {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    .container{
+        display: flex;  
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;  
+    }
+
+    .card {
+        width: 100%;
+        max-width: 340px;   
+    }
+    
+    .card img {
+        height: 200px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .musica {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    .musica h3 {
+        font-size: 19px;
+    }
+
+    .musica p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
